@@ -1,11 +1,14 @@
-import { Carousel, Accordion } from "flowbite-react"
+import { Carousel, Accordion } from "flowbite-react";
 
 export const Xaraverse = () => {
   return (
-
-    <section id="home" className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start">
-        <div className="flex flex-col justify-start items-center">
-      <h1 className="
+    <section
+      id="home"
+      className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start mt-18"
+    >
+      <div className="flex flex-col justify-start items-center">
+        <h1
+          className="
             flex-1
             ss:text-[72px]
             ss:leading-[100px]
@@ -21,24 +24,38 @@ export const Xaraverse = () => {
             bg-clip-text
             mb-5
             "
-            >Enter the Xaraverse
-            </h1>
-            <p className=" 
+        >
+          Enter the Xaraverse
+        </h1>
+        <p
+          className=" 
             font-semibold 
-            text-gray-500 
+            text-[#7B8594]
             dark:text-gray-400
-            text-3xl
+            text-xl
             m-10
+            -mt-4
             "
-            >A hyper-realistic, digital world with fully Immersive 3D virtual experience</p>
+        >
+          A hyper-realistic, digital world with fully Immersive 3D virtual
+          experience
+        </p>
 
-            <img src="/xaraverse.png" className="w-[100vw] mb-32 items-start justify-start"/>
+        <div className="w-[100vw] mb-32 items-start justify-start relative">
+          <img
+            src="/xaraverse.png"
+            className="w-[100vw] mb-32 items-start justify-start"
+          ></img>
+          <button className="absolute text-white h-20 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
+            Enter Demo
+          </button>
+        </div>
 
-
-            <div className="w-[100%] flex flex-row bg-[#0b091a] rounded border-t-1 border-slate-500 items-center">
-            
-            <div className=" flex flex-col p-20 -mt-10 ml-10">
-            <h1 className="
+        <div className="w-[100%] relative flex flex-col bg-[#0b091a] rounded border-t-1 border-slate-500 items-center">
+          <div className="flex flex-row">
+            <div className=" flex flex-col pt-20 pb-20 ml-10">
+              <h1
+                className="
             m-2
             ss:text-[72px]
             ss:leading-[100px]
@@ -54,79 +71,107 @@ export const Xaraverse = () => {
             bg-clip-text
             mb-5
             "
-            >Ecosystem overview
-            </h1>
+              >
+                Ecosystem overview
+              </h1>
 
-            <p className="
-                m-2
-                text-lg
-                font-thin
-                tracking-tight 
-                leading-none 
-                text-white md:text-5xl lg:text-6xl 
-                dark:text-white 
-                inline-block
-                bg-clip-text
+              <p
+                className="
+              m-2
+              text-xl
+              font-thin
+              tracking-tight 
+              leading-none 
+              text-[#7B8594]
+              dark:text-white 
+              inline-block
+              bg-clip-text
+          tracking-tight 
+leading-snug
                 
-                ">- Bid, Buy, and Sell NFTs or Rent Virtual Apartments via the Xara City <br></br> Market Place</p>
+                "
+              >
+                - Bid, Buy, and Sell NFTs or Rent Virtual Apartments via the
+                Xara City Market Place
+              </p>
 
+              <p
+                className="
+              m-2
+              text-xl
+              font-thin
+              tracking-tight 
+              leading-none 
+              text-[#7B8594]
+              dark:text-white 
+              inline-block
+              bg-clip-text
+          tracking-tight 
+leading-snug
+                "
+              >
+                - Stake NFTs in the Xara City Play-To-Earn property development
+                game and earn XARA as a staking reward
+              </p>
 
-            <p className="
+              <p
+                className="
+              m-2
+              text-xl
+              font-thin
+              tracking-tight 
+              leading-none 
+              text-[#7B8594]
+              dark:text-white 
+              inline-block
+              bg-clip-text
+          tracking-tight 
+leading-snug
+                "
+              >
+                - Spend XARA earned from staking in the Xaraverse (metaverse) on
+                VR experience such as shopping, casino, games, educational
+                seminars and trading, theme parks and more...
+              </p>
+
+              <p
+                className="
                 m-2
                 text-xl
                 font-thin
                 tracking-tight 
                 leading-none 
-                text-white md:text-5xl lg:text-6xl 
+                text-[#7B8594]
                 dark:text-white 
                 inline-block
                 bg-clip-text
-                
-                ">- Stake NFTs in the Xara City Play-To-Earn property development game <br></br> and earn XARA as a staking reward</p>
-
-
-            <p className="
-                m-2
-                text-xl
-                font-thin
-                tracking-tight 
-                leading-none 
-                text-white md:text-5xl lg:text-6xl 
-                dark:text-white 
-                inline-block
-                bg-clip-text
-                
-                ">- Spend XARA earned from staking in the Xaraverse (metaverse) on VR <br></br> experience such as shopping, casino, games, educational seminars <br></br> and trading, theme parks and more...</p>
-            
-            <p className="
-                m-2
-                text-xl
-                font-thin
-                tracking-tight 
-                leading-none 
-                text-white md:text-5xl lg:text-6xl 
-                dark:text-white 
-                inline-block
-                bg-clip-text
-                
-                ">- Swap or Trade USD for XARA to spend in-game, funds Liquidity Pools to <br></br> earn yield on trading dees, or stake XARA tp earn on APR.</p>
-
+            tracking-tight 
+ leading-snug
+                "
+              >
+                - Swap or Trade USD for XARA to spend in-game, funds Liquidity
+                Pools to earn yield on trading dees, or stake XARA tp earn on
+                APR.
+              </p>
             </div>
 
-            <div className="aspect-w-16 aspect-h-9 mt-2  desktop:ml-52">
-              <iframe src="https://www.youtube.com/embed/Z_BiOBlOnj8" width="640" height="360" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-lg desktop:ml-52 m-20">
+              <iframe
+                src="https://www.youtube.com/embed/Z_BiOBlOnj8"
+                width="640"
+                height="360"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-
-       
-
-            </div>
-
-            
-      
-    </div>
-
+          </div>
+          <span className="absolute right-12 bottom-10 mr-10 mt-20" >
+            <button className="h-20 w-20 text-white text-4xl rounded-full border-2 border-purple-700 m-5">{`<`}</button>
+            <button className=" h-20 w-20 text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-4xl rounded-full mt-15">{`>`}</button>
+          </span>
+        </div>
+      </div>
     </section>
-    
-  )
-}
-
+  );
+};

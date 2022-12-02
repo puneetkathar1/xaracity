@@ -63,15 +63,16 @@ export const Navbar = (prop: any) => {
 
 		<div className="flex gap-5 p-5 justify-end items-center">
 		
-			<button className = " h-12 w-20 text-white" >Home</button>
-			<button className = " h-12 w-30 text-white">Ecosystem</button>
-			<button className = " h-12 w-20 text-white">Collection</button>
-            <button className = " h-12 w-20 text-white">Xaraverse</button>
-            <button className = " h-12 w-10 text-white">FAQ</button>
-            <button className = " h-12 w-10 text-white">Team</button>
-            <button className = " inline-flex items-center text-white border-3 font-bold py-2 px-4 rounded bg-violet-600">Market Place</button>
+			<button className = " h-12 w-20 text-slate-400 text-lg hover:text-fuchsia-700" >Home</button>
+			<button className = " h-12 w-30 text-slate-400 text-lg hover:text-fuchsia-700">Ecosystem</button>
+			<button className = " h-12 w-20 text-slate-400 text-lg hover:text-fuchsia-700">Collection</button>
+            <button className = " h-12 w-20 text-slate-400 text-lg hover:text-fuchsia-700">Xaraverse</button>
+            <button className = " h-12 w-10 text-slate-400 text-lg hover:text-fuchsia-700">FAQ</button>
+            <button className = " h-12 w-10 text-slate-400 text-lg hover:text-fuchsia-700">Team</button>
+            <button className = " inline-flex items-center text-white border-3 font-bold py-2 px-4 rounded bg-fuchsia-700 hover:border-2 hover:bg-transparent hover:border-fuchsia-700">Market Place</button>
 		</div>
 			
 		</nav>
+		
 	);
 }

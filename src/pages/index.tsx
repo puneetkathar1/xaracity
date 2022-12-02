@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
 import { NextPage } from 'next'
-import { Navbar } from '../components/Navbar'
-import { Main } from '../components/Main'
-import { NFT } from '../components/NFT'
-import { Xaraverse } from '../components/Xaraverse'
-import { Faq } from '../components/Faq'
-import { FooterMain } from '../components/Footer'
-import { Team } from '../components/Team'
+import { Navbar } from '../../components/Navbar'
+import { Main } from '../../components/Main'
+import { NFT } from '../../components/NFT'
+import { Xaraverse } from '../../components/Xaraverse'
+import { Faq } from '../../components/Faq2'
+import { FooterMain } from '../../components/Footer'
+import { Team } from '../../components/Team'
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +26,7 @@ const Home: NextPage = () => {
               <div className='xl:max-w-[1280px] w-full'></div>
               <Navbar />
             </div>
+            <div className="navbar-line" />
 
             <div className='flex justify-center items-start bg-black'>
               <div className='xl:max-w-[1280px] w-full tablet:w-full'>
