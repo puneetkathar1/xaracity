@@ -70,7 +70,7 @@ export const Xaraverse = () => {
         <div className="w-[100vw] mb-0 items-start justify-start relative">
           <div className="relative z-[5] w-[100vw] mb-0 items-start justify-start">
             <video width="100%" autoPlay muted controls={false} loop>
-              <source src="/xaracity.webm" type="video/webm" />
+              <source src="https://media.githubusercontent.com/media/puneetkathar1/xaracity/master/public/xaracity.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
