@@ -32,7 +32,7 @@ export const Xaraverse = () => {
 
   return (
     <section className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start pt-18 bg-[#020117]">
-      {/* <div className="flex flex-col justify-start items-center">
+      <div className="flex flex-col justify-start items-center">
         <h1
           className="
             flex-1
@@ -566,7 +566,7 @@ leading-snug
             >{`>`}</button>
           </span>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
