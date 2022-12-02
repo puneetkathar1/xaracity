@@ -98,7 +98,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
   }
 };
 
-export const NFT = (props: any) => {
+export const NFT = (props) => {
   return (
     <div className="w-[100vw]  bg-[#0A091B] items-center -mt-4 flex flex-col ">
       <div className="container flex flex-col  justify-start items-center ">
