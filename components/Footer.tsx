@@ -39,7 +39,7 @@ export const FooterMain = () => {
           </Footer.LinkGroup>
         </div>
         <div>
-          <Footer.Title title="Buy" className="text-[#4258CF] normal-case" />
+          <Footer.Title title="Buy" className="text-[#4258CF] normal-case -mt-8"  />
           <Footer.LinkGroup col={true}>
             <Footer.Link href="#">
               Market Place
@@ -57,7 +57,7 @@ export const FooterMain = () => {
         </div>
         
         <div className='mr-auto'>
-          <Footer.Title title="Follow Us" className="text-[#4258CF] normal-case" />
+          <Footer.Title title="Follow Us" className="text-[#4258CF] normal-case -mt-6" />
           <Footer.LinkGroup col={true}>
             <Footer.Link href="#">
               Discord
@@ -75,7 +75,14 @@ export const FooterMain = () => {
           
         </div>
         <div className='ml-auto right-32 top-28 absolute'>
-          <Footer.Title title="REVIEWED ON   ⭐⭐⭐⭐⭐"  className="text-[#4258CF] normal-case" />
+          <span className="flex flex-row" >
+            <Footer.Title title="REVIEWED ON"  className="text-[#4258CF] normal-case mr-5" />
+            <img alt="" src="/star.png" className="h-5 w-5" />
+            <img alt="" src="/star.png" className="h-5 w-5" />
+            <img alt="" src="/star.png" className="h-5 w-5" />
+            <img alt="" src="/star.png" className="h-5 w-5" />
+            <img alt="" src="/star.png" className="h-5 w-5" />
+          </span>
           <Footer.LinkGroup col={true}>
             <Footer.Link href='#' className="ml-auto right-32 -mt-4">
               135 Reviews

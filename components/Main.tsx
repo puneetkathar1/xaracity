@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import { CustomContentProgressbar } from "./customCircularProgress";
 export const Main = (props: any) => {
   return (
-    <section className=" w-[100vw] flex laptop:flex-col flex-col sm:py-16 justify-center items-center -mt-5">
+    <section className=" w-[100vw] flex laptop:flex-col flex-col sm:py-16 justify-center items-center -mt-4">
       <div id="home" className="w-full">
         <div className="navbar-line" />
         <div className="flex flex-1 flex-row  items-start justify-center xl:px-0 sm:py-16  whitespace-nowrap ">
-          <div className="flex flex-col justify-between items-start  p-40 mt-6 ml-1">
+          <div className="flex flex-col justify-between items-start  p-40 -mt-10 ml-1">
             <h1
               className="
             flex-1
@@ -101,15 +101,15 @@ export const Main = (props: any) => {
             </button>
           </div>
 
-          <div className="w-[100%] h-[100%] relative z-[5] mt-6 ">
-            <video autoPlay muted controls={false} loop>
+          <div className="h-[100%] relative z-[5] mt-10 ">
+            <video width="500" autoPlay muted controls={false} loop>
               <source src="/xara_card.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
       </div>
-      <div id="home2" className="w-[100vw] p-32">
+      <div id="home2" className="w-[100vw] p-20">
       <figure style={{margin: 'auto'}} className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-[60vw] flex flex-row ml-5">
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
           <div

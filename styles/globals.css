@@ -29,7 +29,7 @@
 .navbar-line {
   background: linear-gradient(to right, grey, white, grey);
   height: 1px;
-  width: 60%;
+  width: 100%;
   opacity: 0.2;
 }
 

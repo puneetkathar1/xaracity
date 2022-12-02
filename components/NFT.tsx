@@ -1,4 +1,102 @@
 import { Dropdown } from "flowbite-react";
+import Countdown from "react-countdown";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
+const LandsitesCarousel = () => {
+  return (
+    <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
+      <div>
+        <img alt="" src="/landsite1.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite2.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite3.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite4.png" />
+      </div>
+    </Carousel>
+  );
+};
+
+const BuildingCarousel = () => {
+  return (
+    <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
+      <div>
+        <img alt="" src="/b1.png" />
+      </div>
+      <div>
+        <img alt="" src="/b2.png" />
+      </div>
+      <div>
+        <img alt="" src="/b3.png" />
+      </div>
+      <div>
+        <img alt="" src="/b4.png" />
+      </div>
+      <div>
+        <img alt="" src="/b5.png" />
+      </div>
+      <div>
+        <img alt="" src="/b6.png" />
+      </div>
+    </Carousel>
+  );
+};
+
+const MixCarousel = () => {
+  return (
+    <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
+      <div>
+        <img alt="" src="/b1.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite1.png" />
+      </div>
+      <div>
+        <img alt="" src="/b2.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite2.png" />
+      </div>
+      <div>
+        <img alt="" src="/b3.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite3.png" />
+      </div>
+      <div>
+        <img alt="" src="/b4.png" />
+      </div>
+      <div>
+        <img alt="" src="/landsite4.png" />
+      </div>
+      <div>
+        <img alt="" src="/b5.png" />
+      </div>
+      <div>
+        <img alt="" src="/b6.png" />
+      </div>
+    </Carousel>
+  );
+};
+// Renderer callback with condition
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a complete state
+    return "Mint is Live!";
+  } else {
+    // Render a countdown
+    return (
+      <span>
+        {days}d : {hours}h : {minutes}m : {seconds}s
+      </span>
+    );
+  }
+};
 
 export const NFT = (props: any) => {
   return (
@@ -6,7 +104,7 @@ export const NFT = (props: any) => {
       <div className="container flex flex-col  justify-start items-center ">
         <h1
           className="
-            m-24 
+            m-28 
             text-6xl
             font-extrabold 
             tracking-tight 
@@ -43,16 +141,18 @@ export const NFT = (props: any) => {
             </p>
           </div>
           <div className="flex-col w-full md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
-            <div className="h-96 w-full md:w-48 md:h-auto md:rounded-none ml-5 mr-5 mx-auto">
+            <div className="h-96 w-full md:w-48 md:h-auto md:rounded-none -ml-1 mr-5 mx-auto">
               <img
-                src="/mint_preview.png"
+                src="/mint_preview2.png"
                 alt=""
-                className="h-96 w-full md:w-48 md:h-auto md:rounded-none mx-auto"
+                className="h-96 w-96 md:w-48 md:h-48 md:rounded-none mx-auto"
               />
             </div>
-            <div className="h-20 w-full md:w-48 md:h-auto text-center text-2xl text-white font-bold p-2 rounded-b-lg ml-5 mr-5 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="h-20 w-96 md:w-48 md:h-auto text-center text-2xl text-white font-bold p-2 rounded-b-lg ml-14 mr-5 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               Whitelist mint
-              <p>10d : 21h : 17m : 38s</p>
+              <p>
+                <Countdown date={new Date("12/7/2022")} renderer={renderer} />
+              </p>
             </div>
           </div>
           <div className="flex flex-col mr-5">
@@ -164,6 +264,7 @@ export const NFT = (props: any) => {
                 dark:text-white 
                 inline-block
                 bg-clip-text
+                ml-36
  leading-snug text-right"
                 >
                   7 Dec 2022
@@ -200,6 +301,7 @@ export const NFT = (props: any) => {
                 dark:text-white 
                 inline-block
                 bg-clip-text
+                ml-36
  leading-snug text-right"
                 >
                   0.07 ETH
@@ -236,6 +338,7 @@ export const NFT = (props: any) => {
                 dark:text-white 
                 inline-block
                 bg-clip-text
+                ml-40
  leading-snug text-right"
                 >
                   0.08 ETH
@@ -271,7 +374,7 @@ export const NFT = (props: any) => {
       <h1
         className="
             m-10 
-            mt-20
+            mt-18
             text-6xl
             font-extrabold 
             tracking-tight 
@@ -313,12 +416,10 @@ export const NFT = (props: any) => {
       </p>
 
       <div className=" flex flex-row sm:flex-col">
-        <div className="w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center justify-between">
-          <img
-            className=" w-4/5 md:w-48 md:h-auto md:rounded-none mt-5 rounded  mx-auto"
-            src="/alpha_card.jpg"
-            alt=""
-          />
+        <div className="w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center justify-between ">
+          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+            <LandsitesCarousel />
+          </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
               Land Site NFTs
@@ -363,11 +464,9 @@ export const NFT = (props: any) => {
         </div>
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
-          <img
-            className=" w-4/5 md:w-48 md:h-auto md:rounded-none mt-5 rounded  mx-auto"
-            src="/house.png"
-            alt=""
-          />
+          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+            <BuildingCarousel />
+          </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
               Building NFTs
@@ -412,11 +511,9 @@ export const NFT = (props: any) => {
         </div>
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
-          <img
-            className=" w-4/5 md:w-48 md:h-auto md:rounded-none mt-5 rounded  mx-auto"
-            src="/alpha_card.jpg"
-            alt=""
-          />
+          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+            <MixCarousel />
+          </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
               Land & Building NFTs
@@ -464,7 +561,11 @@ export const NFT = (props: any) => {
         Purchase a Land Site and Building Combo for a 10% discount and earn 25%
         more XARA from staking
       </p>
-      <img src="/blockchains.png" className="p-16 mt-10 mb-10" />
+      <div className="flex flex-row mb-10 pb-16">
+      <img src="/eth.svg" style={{color: 'white'}} className="h-20 m-10" />
+      <img src="/binance.svg" className="h-48 m-10 -mt-1" />
+      <img src="/openSea.svg" className="h-20 m-10" />
+      </div>
     </div>
   );
 };

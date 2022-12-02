@@ -29,7 +29,7 @@ export const Team = () => {
         >
           Join Our Community
         </h1>
-        <button className="mx-auto h-20 w-40 font-bold p-4 text-xl text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg mt-10 ml-16" >Join Discord</button>
+        <button className="mx-auto h-20 w-60 font-bold p-4 items-center justify-items-center text-xl text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg mt-10 " ><img alt="" src="/discord.svg" className="h-8 w-8 ml-4"  /> <p className="-mt-8 ml-10">Join Discord</p></button>
       </div>
         </div>
       
