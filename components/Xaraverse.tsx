@@ -68,14 +68,16 @@ export const Xaraverse = () => {
         </p>
 
         <div className="w-[100vw] mb-0 items-start justify-start relative">
-          <img
-            src="/xaraverse.png"
-            className="w-[100vw] mb-0 items-start justify-start"
-          ></img>
-          <button className="absolute text-white h-20 w-60 rotate-90 rounded-lg text-2xl bg-[#9E1DA1] left-0 top-1/2 -ml-20">
+          <div className="relative z-[5] w-[100vw] mb-0 items-start justify-start">
+            <video width="100%" autoPlay muted controls={false} loop>
+              <source src="/XaraCity_Day07.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button className="z-10 absolute text-white h-20 w-60 rotate-90 rounded-lg text-2xl bg-[#9E1DA1] left-0 top-1/2 -ml-20">
             View Map
           </button>
-          <button className="absolute text-white h-20 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
+          <button className="z-10 absolute text-white h-20 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
             Enter Demo
           </button>
         </div>
@@ -557,7 +559,7 @@ leading-snug
                 if (value == 3) {
                   setValue(0);
                 } else {
-                  setValue(value+1);
+                  setValue(value + 1);
                 }
               }}
               className=" h-20 w-20 text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-4xl rounded-full item-center mt-15"
