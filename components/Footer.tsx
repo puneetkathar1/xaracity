@@ -77,7 +77,7 @@ export const FooterMain = () => {
         <div className='ml-auto right-32 top-28 absolute'>
           <Footer.Title title="REVIEWED ON   ⭐⭐⭐⭐⭐"  className="text-[#4258CF] normal-case" />
           <Footer.LinkGroup col={true}>
-            <Footer.Link className="ml-auto right-32 -mt-4">
+            <Footer.Link href='#' className="ml-auto right-32 -mt-4">
               135 Reviews
             </Footer.Link>
             </Footer.LinkGroup>
