@@ -17,7 +17,7 @@ export const Faq = () => {
     <div
       style={{
         backgroundColor: "#0B091A",
-        paddingTop: "3rem",
+        paddingTop: "5rem",
         paddingBottom: "18vh",
       }}
       className="flex flex-col justify-start items-center"
