@@ -32,7 +32,7 @@ export const Xaraverse = () => {
 
   return (
     <section className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start pt-18 bg-[#020117]">
-      <div className="flex flex-col justify-start items-center">
+      {/* <div className="flex flex-col justify-start items-center">
         <h1
           className="
             flex-1
@@ -70,7 +70,7 @@ export const Xaraverse = () => {
         <div className="w-[100vw] mb-0 items-start justify-start relative">
           <div className="relative z-[5] w-[100vw] mb-0 items-start justify-start">
             <video width="100%" autoPlay muted controls={false} loop>
-              <source src="/XaraCity_Day07.mp4" type="video/mp4" />
+              <source src="/xaracity.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -566,7 +566,7 @@ leading-snug
             >{`>`}</button>
           </span>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

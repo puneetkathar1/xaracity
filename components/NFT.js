@@ -562,9 +562,9 @@ export const NFT = (props) => {
         more XARA from staking
       </p>
       <div className="flex flex-row mb-10 pb-16">
-      <img src="/eth.svg" style={{color: 'white'}} className="h-20 m-10" />
-      <img src="/binance.svg" className="h-48 m-10 -mt-1" />
-      <img src="/openSea.svg" className="h-20 m-10" />
+      <img src="/eth.svg" style={{color: 'white'}} className="h-20 m-10 -mb-10" />
+      <img src="/binance.svg" className="h-48 m-10 -mb-10 -mt-1" />
+      <img src="/openSea.svg" className="h-20 m-10 -mb-10" />
       </div>
     </div>
   );

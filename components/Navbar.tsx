@@ -35,7 +35,10 @@ const navItems = [
 export const Navbar2 = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const [loaded, setLoading] = React.useState(false);
+  React.useEffect(() => {
+    setLoading(true);
+  }, []);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -87,17 +90,16 @@ export const Navbar2 = (props: Props) => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, i) => (
-              <Button
+              <button
                 className={
                   i != navItems.length - 1
                     ? "normal-case text-slate-400 text-lg hover:text-fuchsia-700 m-2 mt-6"
                     : "inline-flex items-center text-white font-bold py-2 px-4 rounded bg-fuchsia-700 hover:border-2 hover:bg-transparent hover:border-fuchsia-500 m-2 mt-6"
                 }
                 key={item}
-                sx={{ color: "#fff" }}
               >
                 {item}
-              </Button>
+              </button>
             ))}
           </Box>
         </Toolbar>

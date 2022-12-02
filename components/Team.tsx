@@ -5,7 +5,7 @@ export const Team = () => {
   return (
     <section
       id="team"
-      className=" w-[100vw]  flex laptop:flex-col flex-col sm:py-16  justify-center items-center "
+      className=" w-[100vw]  flex flex-col sm:py-16  justify-center items-center "
     >
         <div id="home2" className="w-full p-14">
         <div className="flex flex-row mx-auto w-1/2">
@@ -33,7 +33,7 @@ export const Team = () => {
       </div>
         </div>
       
-      <div className="flex flex-col justify-center items-center w-full pt-20 bg-[#020117] ">
+      <div className="flex flex-col justify-center items-center w-full pt-20 bg-[#020117] pt-20">
         <h1
           className="
             ss:text-[72px]
@@ -48,12 +48,12 @@ export const Team = () => {
             inline-block
             text-transparent
             bg-clip-text
-            
+            mt-14
             "
         >
           Core Team
         </h1>
-        <figure className="laptop:flex rounded-xl p-3  md:p-0 dark:bg-slate-800  items-center w-[80vw] h-[470px] flex flex-row ">
+        <figure className="rounded-xl p-3  md:p-0 dark:bg-slate-800  items-center w-[80vw] h-[470px] flex flex-row ">
           <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
             <div
               style={{
