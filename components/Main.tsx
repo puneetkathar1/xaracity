@@ -3,7 +3,7 @@ import { CustomContentProgressbar } from "./customCircularProgress";
 export const Main = (props: any) => {
   return (
     <section className=" w-[100vw] flex laptop:flex-col flex-col sm:py-16 justify-center items-center -mt-5">
-      <div id="home">
+      <div id="home" className="w-full">
         <div className="navbar-line" />
         <div className="flex flex-1 flex-row  items-start justify-center xl:px-0 sm:py-16  whitespace-nowrap ">
           <div className="flex flex-col justify-between items-start  p-40 mt-6 ml-1">
