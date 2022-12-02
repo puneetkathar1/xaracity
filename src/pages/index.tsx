@@ -22,11 +22,10 @@ const Home: NextPage = () => {
       </Head>
 
     <div className="flex w-full flex-col items-center justify-center space-y-4 space-x-0 md:flex-row md:space-x-4 bg-black overflow-hidden">
-            <div className='tablet:px-16 px-6 flex justify-center items-center'>
+            <div id="nav" className='tablet:px-16 px-6 flex justify-center items-center'>
               <div className='xl:max-w-[1280px] w-full'></div>
               <Navbar />
             </div>
-            <div className="navbar-line" />
 
             <div className='flex justify-center items-start bg-black'>
               <div className='xl:max-w-[1280px] w-full tablet:w-full'>

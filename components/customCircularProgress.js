@@ -8,7 +8,7 @@ export const CustomContentProgressbar = (props) => {
   const { children, color } = props;
   const [valueEnd, setValueEnd] = React.useState(66);
   const ref = useRef(); // Trigger as soon as the element becomes visible
-  const inViewport = useIntersection(ref, "-100px"); // Trigger if 200px is visible from the element
+  const inViewport = useIntersection(ref, "-50px"); // Trigger if 200px is visible from the element
 
   return (
     <div

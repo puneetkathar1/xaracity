@@ -7,19 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
-      // that is animation class
-      animation: {
-        linear: 'linear 3s ease-in',
-      },
-
-      // that is actual animation
-      keyframes: theme => ({
-        linear: {
-          '0%': { borderColor: theme('colors.transparent') },
-          '100%': { borderColor: theme('colors.blue.400') },
-        },
-      }),
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle at bottom, rgba(94,32,103,1) 10%, rgba(3,1,22,1) 50%)',
+      }
     },
     container: {
       center: true,

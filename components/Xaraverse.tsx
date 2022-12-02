@@ -3,8 +3,7 @@ import { Carousel, Accordion } from "flowbite-react";
 export const Xaraverse = () => {
   return (
     <section
-      id="home"
-      className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start mt-18"
+      className=" w-[100vw] flex md:flex-row flex-col sm:py-16  justify-start items-start pt-32 bg-[#020117]"
     >
       <div className="flex flex-col justify-start items-center">
         <h1
@@ -41,10 +40,10 @@ export const Xaraverse = () => {
           experience
         </p>
 
-        <div className="w-[100vw] mb-32 items-start justify-start relative">
+        <div className="w-[100vw] mb-0 items-start justify-start relative">
           <img
             src="/xaraverse.png"
-            className="w-[100vw] mb-32 items-start justify-start"
+            className="w-[100vw] mb-0 items-start justify-start"
           ></img>
           <button className="absolute text-white h-20 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
             Enter Demo
@@ -53,7 +52,7 @@ export const Xaraverse = () => {
 
         <div className="w-[100%] relative flex flex-col bg-[#0b091a] rounded border-t-1 border-slate-500 items-center">
           <div className="flex flex-row">
-            <div className=" flex flex-col pt-20 pb-20 ml-10">
+            <div className=" flex flex-col pt-32 pb-20 ml-10">
               <h1
                 className="
             m-2
@@ -155,7 +154,7 @@ leading-snug
               </p>
             </div>
 
-            <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-lg desktop:ml-52 m-20">
+            <div className="aspect-w-16 aspect-h-9 pt-32 pb-20 rounded-lg desktop:ml-52 m-20">
               <iframe
                 src="https://www.youtube.com/embed/Z_BiOBlOnj8"
                 width="640"

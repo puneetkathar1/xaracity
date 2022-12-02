@@ -23,6 +23,7 @@
 
 * {
   scroll-behavior: smooth;
+  
 }
 
 .navbar-line {
@@ -30,4 +31,28 @@
   height: 1px;
   width: 60%;
   opacity: 0.2;
+}
+
+#nav {
+    background: rgb(94,32,103);
+    background: radial-gradient(circle, rgba(94,32,103,1) 10%, rgba(3,1,22,1) 50%);
+
+}
+#home{
+    background: rgb(94,32,103);
+background: radial-gradient(circle at top, rgba(94,32,103,1) 10%, rgba(3,1,22,1) 50%);
+background-position: top;
+background-repeat: no-repeat;
+}
+
+#home2 {
+    background: rgb(3,1,22);
+    background: radial-gradient(circle at center, rgba(3,1,22,1) 10%, rgba(33,56,98,1) 100%);
+}
+
+#footer {
+    background: rgb(94,32,103);
+background: radial-gradient(circle at bottom, rgba(94,32,103,1) 10%, rgba(3,1,22,1) 50%);
+background-position: bottom;
+background-repeat: no-repeat;
 }

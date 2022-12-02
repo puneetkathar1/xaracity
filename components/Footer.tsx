@@ -4,8 +4,8 @@ export const FooterMain = () => {
   return (
 
     <section id="footer" className=" w-[100vw]  flex laptop:flex-col flex-col sm:py-6 justify-center items-center relative">
-    <Footer container={true} className="bg-black">
-  <div className="w-full text-center">
+    <Footer container={true} className="bg-gradient-radial">
+  <div className="w-full text-center" >
     <div className=" w-full justify-between flex flex-col sm:flex sm:justify-between laptop:flex lapyop:grid-cols-1">
       <div className='m-10'>
         <img

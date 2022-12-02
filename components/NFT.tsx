@@ -2,10 +2,11 @@ import { Dropdown } from "flowbite-react";
 
 export const NFT = (props: any) => {
   return (
-    <div className="container flex flex-col w-[70vw]   justify-start items-center mt-14">
-      <h1
-        className="
-            m-10 
+    <div className="w-[100vw]  bg-[#0A091B] items-center -mt-4 flex flex-col ">
+      <div className="container flex flex-col  justify-start items-center ">
+        <h1
+          className="
+            m-24 
             text-6xl
             font-extrabold 
             tracking-tight 
@@ -19,14 +20,14 @@ export const NFT = (props: any) => {
  leading-snug
             
             "
-      >
-        Upcoming NFT Mint
-      </h1>
+        >
+          Upcoming NFT Mint
+        </h1>
 
-      <div className=" w-full h-[700px] flex flex-row bg-[#1E0F2F] rounded-lg ml-5 mr-5 items-center relative">
-        <div className="text-white absolute mr-0 top-20 right-10">
-          <p
-            className="underline-offset-4m-10 
+        <div className=" w-4/5 h-[700px] flex flex-row rounded-lg ml-5 mr-5 items-center relative -mt-24">
+          <div className="text-white absolute mr-0 top-20 right-10">
+            <p
+              className="underline-offset-4m-10 
                 -mt-6
                 text-lg
                 font-thin
@@ -37,26 +38,26 @@ export const NFT = (props: any) => {
                 inline-block
                 bg-clip-text
  leading-snug"
-          >
-            Details
-          </p>
-        </div>
-        <div className="flex-col w-full md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
-          <div className="h-96 w-full md:w-48 md:h-auto md:rounded-none ml-5 mr-5 mx-auto">
-            <img
-              src="/mint_preview.png"
-              alt=""
-              className="h-96 w-full md:w-48 md:h-auto md:rounded-none mx-auto"
-            />
+            >
+              Details
+            </p>
           </div>
-          <div className="h-20 w-full md:w-48 md:h-auto text-center text-2xl text-white font-bold p-2 rounded-b-lg ml-5 mr-5 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-            Whitelist mint
-            <p>10d : 21h : 17m : 38s</p>
+          <div className="flex-col w-full md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
+            <div className="h-96 w-full md:w-48 md:h-auto md:rounded-none ml-5 mr-5 mx-auto">
+              <img
+                src="/mint_preview.png"
+                alt=""
+                className="h-96 w-full md:w-48 md:h-auto md:rounded-none mx-auto"
+              />
+            </div>
+            <div className="h-20 w-full md:w-48 md:h-auto text-center text-2xl text-white font-bold p-2 rounded-b-lg ml-5 mr-5 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+              Whitelist mint
+              <p>10d : 21h : 17m : 38s</p>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col mr-5">
-          <h1
-            className="
+          <div className="flex flex-col mr-5">
+            <h1
+              className="
             m-10 
             text-5xl
             font-thin
@@ -70,11 +71,11 @@ export const NFT = (props: any) => {
             bg-clip-text
  leading-snug
             "
-          >
-            Xarian Citizens
-          </h1>
-          <p
-            className="
+            >
+              Xarian Citizens
+            </h1>
+            <p
+              className="
                 m-10 
                 -mt-6
                 text-lg
@@ -88,13 +89,13 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-          >
-            The Xarian NFTs are made up of 10,000 avatars, each belong to 1 of 5
-            tribes (DAO's)
-          </p>
+            >
+              The Xarian NFTs are made up of 10,000 avatars, each belong to 1 of
+              5 tribes (DAO's)
+            </p>
 
-          <p
-            className="
+            <p
+              className="
                 m-10 
                 -mt-6
                 text-lg
@@ -108,12 +109,12 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-          >
-            Earn up to 92 XARA per month through staking
-          </p>
+            >
+              Earn up to 92 XARA per month through staking
+            </p>
 
-          <p
-            className="
+            <p
+              className="
                 m-10 
                 -mt-6
                 text-lg
@@ -127,15 +128,15 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-          >
-            Collect XARA City Land Site and Building NFTs to become the Head
-            Council (DAO) and earn additional XARA
-          </p>
+            >
+              Collect XARA City Land Site and Building NFTs to become the Head
+              Council (DAO) and earn additional XARA
+            </p>
 
-          <div className="flex flex-col">
-            <div className="flex-row -mt-4">
-              <p
-                className="
+            <div className="flex flex-col">
+              <div className="flex-row -mt-4">
+                <p
+                  className="
                 m-10 
                 -mt-6
                 text-lg
@@ -149,11 +150,11 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-              >
-                Mint Date:
-              </p>
-              <p
-                className="m-10 
+                >
+                  Mint Date:
+                </p>
+                <p
+                  className="m-10 
                 -mt-6
                 text-lg
                 font-thin
@@ -164,13 +165,13 @@ export const NFT = (props: any) => {
                 inline-block
                 bg-clip-text
  leading-snug text-right"
-              >
-                7 Dec 2022
-              </p>
-            </div>
-            <div className="flex-row -mt-8">
-              <p
-                className="
+                >
+                  7 Dec 2022
+                </p>
+              </div>
+              <div className="flex-row -mt-8">
+                <p
+                  className="
                 m-10 
                 -mt-10
                 -mr-2
@@ -185,11 +186,11 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-              >
-                Whitelist Mint Price:
-              </p>
-              <p
-                className="m-10 
+                >
+                  Whitelist Mint Price:
+                </p>
+                <p
+                  className="m-10 
                 -mt-6
                 text-lg
                 font-thin
@@ -200,13 +201,13 @@ export const NFT = (props: any) => {
                 inline-block
                 bg-clip-text
  leading-snug text-right"
-              >
-                0.07 ETH
-              </p>
-            </div>
-            <div className="flex-row  -mt-8">
-              <p
-                className="
+                >
+                  0.07 ETH
+                </p>
+              </div>
+              <div className="flex-row  -mt-8">
+                <p
+                  className="
                 m-10 
                 -mt-10
                 -mr-2
@@ -221,11 +222,11 @@ export const NFT = (props: any) => {
  leading-snug
                 
                 "
-              >
-                Public Mint Price:
-              </p>
-              <p
-                className="m-10 
+                >
+                  Public Mint Price:
+                </p>
+                <p
+                  className="m-10 
                 -mt-6
                 text-lg
                 font-thin
@@ -236,13 +237,13 @@ export const NFT = (props: any) => {
                 inline-block
                 bg-clip-text
  leading-snug text-right"
-              >
-                0.08 ETH
-              </p>
-            </div>
-            <div className="flex flex-row gap-10">
-              <p
-                className="
+                >
+                  0.08 ETH
+                </p>
+              </div>
+              <div className="flex flex-row gap-10">
+                <p
+                  className="
                 m-10 
                 -mt-1
                 -mr-2
@@ -256,21 +257,21 @@ export const NFT = (props: any) => {
                 bg-clip-text
  leading-snug
                 "
-              >
-                Whitelist mint - coming soon
-              </p>
-              <button className="w-36 text-white border-3 text-2xl font-bold  h-14 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 -mt-5">
-                Mint
-              </button>
+                >
+                  Whitelist mint - coming soon
+                </p>
+                <button className="w-36 text-white border-3 text-2xl font-bold  h-14 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 -mt-5">
+                  Mint
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <h1
         className="
             m-10 
-            mt-52
+            mt-20
             text-6xl
             font-extrabold 
             tracking-tight 
@@ -287,6 +288,7 @@ export const NFT = (props: any) => {
       >
         P2E - NFT collections
       </h1>
+      <br />
       <p
         className="
             m-10 
@@ -343,7 +345,13 @@ export const NFT = (props: any) => {
           </div>
 
           <div className="flex flex-row m-10 justify-between text-lg items-center">
-            <Dropdown label="Currency" style={{backgroundColor: 'transparent', border: '2px solid #8840C4'}}>
+            <Dropdown
+              label="Currency"
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid #8840C4",
+              }}
+            >
               <Dropdown.Item>Ethereum</Dropdown.Item>
               <Dropdown.Item>$XARA</Dropdown.Item>
             </Dropdown>
@@ -386,7 +394,13 @@ export const NFT = (props: any) => {
           </div>
 
           <div className="flex flex-row m-10 justify-between text-lg items-center">
-            <Dropdown label="Currency" style={{backgroundColor: 'transparent', border: '2px solid #8840C4'}}>
+            <Dropdown
+              label="Currency"
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid #8840C4",
+              }}
+            >
               <Dropdown.Item>Ethereum</Dropdown.Item>
               <Dropdown.Item>$XARA</Dropdown.Item>
             </Dropdown>
@@ -429,7 +443,13 @@ export const NFT = (props: any) => {
           </div>
 
           <div className="flex flex-row m-10 justify-between text-lg items-center ">
-            <Dropdown label="Currency" style={{backgroundColor: 'transparent', border: '2px solid #8840C4'}}>
+            <Dropdown
+              label="Currency"
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid #8840C4",
+              }}
+            >
               <Dropdown.Item>Ethereum</Dropdown.Item>
               <Dropdown.Item>$XARA</Dropdown.Item>
             </Dropdown>
@@ -444,7 +464,7 @@ export const NFT = (props: any) => {
         Purchase a Land Site and Building Combo for a 10% discount and earn 25%
         more XARA from staking
       </p>
-      <img src="/blockchains.png" className="m-32" />
+      <img src="/blockchains.png" className="p-16 mt-10 mb-10" />
     </div>
   );
 };

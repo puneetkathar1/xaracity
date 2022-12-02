@@ -10,7 +10,7 @@ export const Navbar = (prop: any) => {
 	
 
 	return (
-		<nav className = "container w-[100vw] flex flex-row  whitespace-nowrap">
+		<nav className = "container w-[100vw] flex flex-row  whitespace-nowrap mb-0">
 			
 			<div className="flex absolute left-4 top-4 pl-10">
 				<img className = "w-[200px]" src="/xara_logo.png" alt="profile" />
