@@ -72,10 +72,12 @@ export const Xaraverse = () => {
               Your browser does not support the video tag.
             </video> */}
             <iframe
-              src="https://www.youtube.com/embed/jDL9PjY-8Oc?autoplay=1&controls=0&loop=1&rel=0&fs=0"
+              src="https://www.youtube.com/embed/jDL9PjY-8Oc?autoplay=1&controls=0&loop=1"
               width="640"
               height="360"
               className="rounded-xl"
+              allow="autoplay"
+              controls="0"
             ></iframe>
             <button className="z-10  absolute text-white h-10 w-32 laptop:h-16 laptop:w-60 rotate-90 rounded-lg text-lg laptop:text-2xl bg-[#304AB1] left-[-3.2rem] laptop:left-[-6rem] top-1/2  ">
               View Map
