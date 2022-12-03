@@ -1,113 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Dropdown } from "flowbite-react";
 import Countdown from "react-countdown";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const LandsitesCarousel = (interval) => {
-  return (
-    <Carousel
-      showArrows={false}
-      showThumbs={false}
-      transitionTime={1}
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      autoPlay
-    >
-      <div data-interval={interval}>
-        <img alt="" src="/landsite1.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite2.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite3.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite4.png" />
-      </div>
-    </Carousel>
-  );
-};
-
-const BuildingCarousel = (interval) => {
-  return (
-    <Carousel
-      showArrows={false}
-      showThumbs={false}
-      transitionTime={1}
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      autoPlay
-    >
-      <div data-interval={interval}>
-        <img alt="" src="/b1.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b2.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b3.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b4.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b5.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b6.png" />
-      </div>
-    </Carousel>
-  );
-};
-
-const MixCarousel = (interval) => {
-  return (
-    <Carousel
-      showArrows={false}
-      showThumbs={false}
-      transitionTime={1}
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      autoPlay
-    >
-      <div data-interval={interval}>
-        <img alt="" src="/b1.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite1.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b2.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite2.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b3.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite3.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b4.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/landsite4.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b5.png" />
-      </div>
-      <div data-interval={interval}>
-        <img alt="" src="/b6.png" />
-      </div>
-    </Carousel>
-  );
-};
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -124,10 +23,19 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 export const NFT = (props) => {
-  const [interval, setInterval] = useState(0);
-  useEffect(() => {
-    setInterval(5000);
-  }, []);
+
+  const [nav1, setNav1] = useState();
+  const [nav2, setNav2] = useState();
+  const [nav3, setNav3] = useState();
+
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   return (
     <div className="w-[100vw]  bg-[#0A091B] items-center -mt-4 flex flex-col ">
       <div className="container flex flex-col  justify-start items-center ">
@@ -397,7 +305,24 @@ export const NFT = (props) => {
       <div className=" flex flex-row sm:flex-col">
         <div className="w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center justify-between ">
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
-            <LandsitesCarousel interval={interval} />
+            <Slider
+              {...settings}
+              asNavFor={nav2, nav3}
+              ref={(slider1) => setNav1(slider1)}
+            >
+              <div>
+                <img alt="" src="/landsite1.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite2.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite3.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite4.png" />
+              </div>
+            </Slider>
           </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
@@ -444,7 +369,26 @@ export const NFT = (props) => {
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
-            <BuildingCarousel interval={interval} />
+            <Slider asNavFor={nav1, nav3} ref={(slider2) => setNav2(slider2)}>
+              <div>
+                <img alt="" src="/b1.png" />
+              </div>
+              <div>
+                <img alt="" src="/b2.png" />
+              </div>
+              <div>
+                <img alt="" src="/b3.png" />
+              </div>
+              <div>
+                <img alt="" src="/b4.png" />
+              </div>
+              <div>
+                <img alt="" src="/b5.png" />
+              </div>
+              <div>
+                <img alt="" src="/b6.png" />
+              </div>
+            </Slider>
           </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
@@ -491,7 +435,38 @@ export const NFT = (props) => {
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
-            <MixCarousel interval={interval} />
+            <Slider asNavFor={nav1, nav2} ref={(slider3) => setNav3(slider3)}>
+              <div>
+                <img alt="" src="/b1.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite1.png" />
+              </div>
+              <div>
+                <img alt="" src="/b2.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite2.png" />
+              </div>
+              <div>
+                <img alt="" src="/b3.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite3.png" />
+              </div>
+              <div>
+                <img alt="" src="/b4.png" />
+              </div>
+              <div>
+                <img alt="" src="/landsite4.png" />
+              </div>
+              <div>
+                <img alt="" src="/b5.png" />
+              </div>
+              <div>
+                <img alt="" src="/b6.png" />
+              </div>
+            </Slider>
           </div>
           <p className=" flex flex-col m-10">
             <span className="text-white font-bold text-[32px] mb-2">
