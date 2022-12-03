@@ -197,7 +197,6 @@ leading-snug
                     aria-controls="0"
                     frameBorder="0"
                     className="rounded-xl"
-                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -316,7 +315,6 @@ leading-snug
                     aria-controls="0"
                     frameBorder="0"
                     className="rounded-xl"
-                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -435,7 +433,6 @@ leading-snug
                     aria-controls="0"
                     frameBorder="0"
                     className="rounded-xl"
-                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -554,7 +551,6 @@ leading-snug
                     aria-controls="0"
                     frameBorder="0"
                     className="rounded-xl"
-                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
