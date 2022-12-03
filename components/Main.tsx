@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { CustomContentProgressbar } from "./customCircularProgress";
 export const Main = (props: any) => {
   return (
-    <section className=" w-[100vw] flex laptop:flex-col flex-col sm:py-16 justify-center items-center -mt-4">
+    <section className="w-full flex laptop:flex-col flex-col">
       <div id="home" className="w-full">
         <div className="navbar-line" />
-        <div className="flex flex-1 flex-col-reverse items-center laptop:flex-row  items-start justify-center xl:px-0 sm:py-16  whitespace-nowrap ">
+        <div className="w-full flex flex-col-reverse items-center laptop:flex-row  items-start justify-center whitespace-nowrap ">
           <div className="flex flex-col justify-between items-start laptop:pt-40 pb-16 laptop:pb-40 pl-10 -mt-10 ">
             <h1
               className="
@@ -110,91 +110,103 @@ export const Main = (props: any) => {
           </div>
         </div>
       </div>
-      <div id="home2" className="w-[100vw] p-20">
-      <figure style={{margin: 'auto'}} className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-95vw laptop:w-[60vw] flex flex-row ml-5 grid grid-cols-2 laptop:grid-cols-4">
-        <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-            }}
-          >
-            <CustomContentProgressbar color="#3e98c7">
-              <img
-                className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                src="/market.jpeg"
-                alt=""
-              />
-            </CustomContentProgressbar>
+      <div id="home2" className="w-full p-20">
+        <figure
+          style={{ margin: "auto" }}
+          className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-95vw laptop:w-[60vw] flex flex-row ml-5 grid grid-cols-2 laptop:grid-cols-4"
+        >
+          <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
+            <div
+              style={{
+                width: "150px",
+                height: "150px",
+              }}
+            >
+              <CustomContentProgressbar color="#3e98c7">
+                <img
+                  className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                  src="/market.jpeg"
+                  alt=""
+                />
+              </CustomContentProgressbar>
+            </div>
+            <blockquote>
+              <p className=" text-xl laptop:text-2xl font-bold text-blue-400">
+                Market Place
+              </p>
+            </blockquote>
           </div>
-          <blockquote>
-            <p className=" text-xl laptop:text-2xl font-bold text-blue-400">Market Place</p>
-          </blockquote>
-        </div>
-        <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-            }}
-          >
-            <CustomContentProgressbar color="#3e98c7">
-              <img
-                className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                src="/play_to_earn.jpg"
-                alt=""
-                width="384"
-                height="512"
-              />
-            </CustomContentProgressbar>
+          <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
+            <div
+              style={{
+                width: "150px",
+                height: "150px",
+              }}
+            >
+              <CustomContentProgressbar color="#3e98c7">
+                <img
+                  className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                  src="/play_to_earn.jpg"
+                  alt=""
+                  width="384"
+                  height="512"
+                />
+              </CustomContentProgressbar>
+            </div>
+            <blockquote>
+              <p className=" text-xl laptop:text-2xl font-bold text-blue-700">
+                Play-To-Earn
+              </p>
+            </blockquote>
           </div>
-          <blockquote>
-            <p className=" text-xl laptop:text-2xl font-bold text-blue-700">Play-To-Earn</p>
-          </blockquote>
-        </div>
-        <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-            }}
-          >
-            <CustomContentProgressbar color="#3e98c7">
-              <img
-                className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                src="/metaverse.png"
-                alt=""
-                width="384"
-                height="512"
-              />
-            </CustomContentProgressbar>
+          <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
+            <div
+              style={{
+                width: "150px",
+                height: "150px",
+              }}
+            >
+              <CustomContentProgressbar color="#3e98c7">
+                <img
+                  className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                  src="/metaverse.png"
+                  alt=""
+                  width="384"
+                  height="512"
+                />
+              </CustomContentProgressbar>
+            </div>
+            <blockquote>
+              <p className=" text-xl laptop:text-2xl font-bold text-violet-800">
+                Metaverse
+              </p>
+            </blockquote>
           </div>
-          <blockquote>
-            <p className=" text-xl laptop:text-2xl font-bold text-violet-800">Metaverse</p>
-          </blockquote>
-        </div>
-        <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-            }}
-          >
-            <CustomContentProgressbar color="#3e98c7">
-              <img
-                className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                src="/trade.png"
-                alt=""
-                width="384"
-                height="512"
-              />
-            </CustomContentProgressbar>
+          <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
+            <div
+              style={{
+                width: "150px",
+                height: "150px",
+              }}
+            >
+              <CustomContentProgressbar color="#3e98c7">
+                <img
+                  className="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                  src="/trade.png"
+                  alt=""
+                  width="384"
+                  height="512"
+                />
+              </CustomContentProgressbar>
+            </div>
+            <blockquote>
+              <p className=" text-xl laptop:text-2xl font-bold text-fuchsia-700">
+                Trade
+              </p>
+            </blockquote>
           </div>
-          <blockquote>
-            <p className=" text-xl laptop:text-2xl font-bold text-fuchsia-700">Trade</p>
-          </blockquote>
-        </div>
-      </figure></div>
+        </figure>
+      </div>
     </section>
   );
 };

@@ -32,7 +32,7 @@ const navItems = [
   "Market Place",
 ];
 
-export const Navbar2 = (props: Props) => {
+export const Navbar = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [loaded, setLoading] = React.useState(false);
@@ -67,7 +67,7 @@ export const Navbar2 = (props: Props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box className="w-full h-24 shadow-xl" sx={{ display: "flex" }}>
+    <Box className="w-full h-16 laptop:h-24 shadow-xl" sx={{ display: "flex" }}>
       <AppBar id="nav" position="static" component="nav">
         <Toolbar>
           <IconButton
@@ -82,7 +82,10 @@ export const Navbar2 = (props: Props) => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none",sm: "none", md: "block" } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "none", md: "block" },
+            }}
           >
             <div className="flex absolute top-4 pl-4">
               <img className="w-[200px]" src="/xara_logo.png" alt="profile" />

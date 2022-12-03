@@ -37,8 +37,8 @@ export const NFT = (props) => {
   };
 
   return (
-    <div className="w-[100vw]  bg-[#0A091B] items-center -mt-4 flex flex-col ">
-      <div className="container flex flex-col  justify-start items-center ">
+    <div className="w-full  bg-[#0A091B] items-center -mt-4 flex flex-col ">
+      <div className="container w-full flex flex-col  justify-start items-center ">
         <h1
           className="
             -mb-4
@@ -60,9 +60,9 @@ export const NFT = (props) => {
           Upcoming NFT Mint
         </h1>
 
-        <div className=" w-4/5 h-fit p-4 flex flex-row rounded-lg ml-5 mr-5 items-center relative bg-[#030116]">
-          <div className="flex-col w-full md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
-            <div className="h-96 w-full md:w-48 md:h-auto md:rounded-none  mr-5 mx-auto">
+        <div className=" w-4/5 h-fit p-4 flex flex-col laptop:flex-row rounded-lg ml-5 mr-5 items-center relative bg-[#030116]">
+          <div className="flex-col md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
+            <div className="h-96 md:w-48 md:h-auto md:rounded-none  mr-5 mx-auto">
               <img
                 src="/mint_preview2.png"
                 alt=""
@@ -250,7 +250,7 @@ export const NFT = (props) => {
                   >
                     Whitelist mint - coming soon
                   </p>
-                  <button className="w-[6rem] flex-1 m-4 mr-8 text-white border-3 text-2xl font-bold  h-14 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 -mt-5">
+                  <button className=" w-[6rem] laptop:flex-1 m-4 mr-8 text-white border-3 text-2xl font-bold  h-14 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 -mt-1 laptop:-mt-5">
                     Mint
                   </button>
                 </div>
@@ -273,6 +273,7 @@ export const NFT = (props) => {
             text-transparent
             bg-clip-text
  leading-snug
+ text-center
             
             "
         >
@@ -295,16 +296,16 @@ export const NFT = (props) => {
             text-transparent
             bg-clip-text
  leading-snug
-            
+            text-center
             "
         >
           Become a Metaverse Property Tycoon and earn XARA token as rent through
           staking
         </p>
       </div>
-      <div className=" flex flex-row sm:flex-col">
-        <div className="w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center justify-between ">
-          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+      <div className="w-full flex flex-col laptop:flex-row">
+        <div className="w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center justify-between mb-10 laptop:mb-0">
+          <div className="w-4/5 m-5 rounded  mx-auto ">
             <Slider
               {...settings}
               asNavFor={nav2}
@@ -367,8 +368,8 @@ export const NFT = (props) => {
           </div>
         </div>
 
-        <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
-          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+        <div className=" w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center  mb-10 laptop:mb-0">
+          <div className="w-4/5 m-5 rounded  mx-auto">
             <Slider
               asNavFor={nav3}
               ref={(slider2) => {
@@ -439,8 +440,8 @@ export const NFT = (props) => {
           </div>
         </div>
 
-        <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
-          <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
+        <div className="w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%] bg-[#1E0F2F] rounded-lg items-center">
+          <div className="w-4/5 = m-5 rounded  mx-auto">
             <Slider
               asNavFor={nav1}
               ref={(slider3) => setNav3(slider3)}
@@ -521,11 +522,11 @@ export const NFT = (props) => {
           </div>
         </div>
       </div>
-      <p className="text-[#7B8B9C] m-10 text-xl">
+      <p className="text-[#7B8B9C] m-10 text-xl text-center  mb-10 laptop:mb-0">
         Purchase a Land Site and Building Combo for a 10% discount and earn 25%
         more XARA from staking
       </p>
-      <div className="flex flex-row mb-10 pb-32 pt-20">
+      <div className="flex flex-col laptop:flex-row mb-10 pb-32 pt-20">
         <img
           src="/eth.svg"
           style={{ color: "grey" }}
@@ -539,7 +540,7 @@ export const NFT = (props) => {
         <img
           src="/openSea.svg"
           style={{ color: "grey" }}
-          className="h-12 m-10 -mb-10 mt-16"
+          className="h-12 laptop:m-10 -mb-10 laptop:mt-16"
         />
       </div>
     </div>
