@@ -7,9 +7,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 const LandsitesCarousel = (interval) => {
   return (
     <Carousel
-      showArrows={true}
+      showArrows={false}
       showThumbs={false}
+      transitionTime={1}
       infiniteLoop
+      showStatus={false}
+      showIndicators={false}
       autoPlay
     >
       <div data-interval={interval}>
@@ -30,7 +33,15 @@ const LandsitesCarousel = (interval) => {
 
 const BuildingCarousel = (interval) => {
   return (
-    <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
+    <Carousel
+      showArrows={false}
+      showThumbs={false}
+      transitionTime={1}
+      infiniteLoop
+      showStatus={false}
+      showIndicators={false}
+      autoPlay
+    >
       <div data-interval={interval}>
         <img alt="" src="/b1.png" />
       </div>
@@ -55,7 +66,15 @@ const BuildingCarousel = (interval) => {
 
 const MixCarousel = (interval) => {
   return (
-    <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
+    <Carousel
+      showArrows={false}
+      showThumbs={false}
+      transitionTime={1}
+      infiniteLoop
+      showStatus={false}
+      showIndicators={false}
+      autoPlay
+    >
       <div data-interval={interval}>
         <img alt="" src="/b1.png" />
       </div>
@@ -527,8 +546,16 @@ export const NFT = (props) => {
           style={{ color: "grey" }}
           className="h-16 mt-14 m-10 -mb-10"
         />
-        <img src="/binance.svg" style={{ color: "white" }} className="h-48 m-10 -mb-10 -mt-1" />
-        <img src="/openSea.svg" style={{ color: "grey" }} className="h-12 m-10 -mb-10 mt-16" />
+        <img
+          src="/binance.svg"
+          style={{ color: "white" }}
+          className="h-48 m-10 -mb-10 -mt-1"
+        />
+        <img
+          src="/openSea.svg"
+          style={{ color: "grey" }}
+          className="h-12 m-10 -mb-10 mt-16"
+        />
       </div>
     </div>
   );
