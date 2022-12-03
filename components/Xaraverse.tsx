@@ -76,7 +76,6 @@ export const Xaraverse = () => {
               width="640"
               height="360"
               className="rounded-xl"
-              type="text/html"
             ></iframe>
             <button className="z-10  absolute text-white h-10 w-32 laptop:h-16 laptop:w-60 rotate-90 rounded-lg text-lg laptop:text-2xl bg-[#304AB1] left-[-3.2rem] laptop:left-[-6rem] top-1/2  ">
               View Map
