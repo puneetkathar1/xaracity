@@ -29,7 +29,7 @@ export const Team = () => {
         >
           Join Our Community
         </h1>
-        <button className="mx-auto h-20 w-60 font-bold p-4 items-center justify-items-center text-xl text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg mt-10 " ><img alt="" src="/discord.svg" className="h-8 w-8 ml-4"  /> <p className="-mt-8 ml-10">Join Discord</p></button>
+        <button className="mx-auto h-14 w-52 font-bold p-4 items-start text-xl text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg mt-10 " ><img alt="" src="/discord.svg" className="h-8 w-8"  /> <p className="-mt-8 ml-12">Join Discord</p></button>
       </div>
         </div>
       
@@ -176,10 +176,10 @@ export const Team = () => {
           </div>
         </figure>
         <div className="flex flex-col mt-28">
-          <p className="text-white -mt-32 text-center font-bold">
+          <p className="text-[#7B8B9C] text-lg -mt-32 text-center font-semibold">
             Xara City has been created by an established Property Development
-            company <br></br> and team of MBA’S, Actuaries, Architects, Artists,
-            3D VR Developers, <br></br> Blockchain Developers and Marketers.
+            company and team of MBA’S, <br></br>  Actuaries, Architects, Artists,
+            3D VR Developers, Blockchain Developers and Marketers.
           </p>
         </div>
       </div>

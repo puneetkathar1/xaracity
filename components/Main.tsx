@@ -5,19 +5,20 @@ export const Main = (props: any) => {
     <section className=" w-[100vw] flex laptop:flex-col flex-col sm:py-16 justify-center items-center -mt-4">
       <div id="home" className="w-full">
         <div className="navbar-line" />
-        <div className="flex flex-1 flex-row  items-start justify-center xl:px-0 sm:py-16  whitespace-nowrap ">
-          <div className="flex flex-col justify-between items-start  p-40 -mt-10 ml-1">
+        <div className="flex flex-1 flex-col-reverse items-center laptop:flex-row  items-start justify-center xl:px-0 sm:py-16  whitespace-nowrap ">
+          <div className="flex flex-col justify-between items-start laptop:pt-40 pb-16 laptop:pb-40 pl-10 -mt-10 ">
             <h1
               className="
             flex-1
             ss:text-[72px]
             ss:leading-[100px]
            
-            text-6xl
+            text-4xl
             font-extrabold 
             tracking-tight 
             leading-[75px]
-            text-gray-900 md:text-5xl lg:text-6xl 
+            laptop:text-5xl 
+            desktop:text-6xl 
             dark:text-white 
             bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
             inline-block
@@ -30,11 +31,11 @@ export const Main = (props: any) => {
             <span
               className="
             mb-4 
-            text-8xl 
+            text-6xl 
             font-extrabold 
             tracking-tight 
             leading-none 
-            text-gray-900 md:text-5xl lg:text-6xl 
+            laptop:text-7xl desktop:text-8xl 
             dark:text-white
             bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
             inline-block
@@ -48,8 +49,8 @@ export const Main = (props: any) => {
               className="
             mb-2
             font-extrabold 
-            text-[25px]
-            text-gray-900 lg:text-lg sm:px-16 xl:px-1
+            text-lg
+            laptop:text-xl desktop:text-2xl 
             dark:text-gray-400
             bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
             inline-block
@@ -101,8 +102,8 @@ export const Main = (props: any) => {
             </button>
           </div>
 
-          <div className="h-[100%] relative z-[5] mt-10 ">
-            <video width="500" autoPlay muted controls={false} loop>
+          <div className="h-fit laptop:mt-10 ">
+            <video width="500px" autoPlay muted controls={false} loop>
               <source src="/xara_card.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
@@ -110,7 +111,7 @@ export const Main = (props: any) => {
         </div>
       </div>
       <div id="home2" className="w-[100vw] p-20">
-      <figure style={{margin: 'auto'}} className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-[60vw] flex flex-row ml-5">
+      <figure style={{margin: 'auto'}} className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-95vw laptop:w-[60vw] flex flex-row ml-5 grid grid-cols-2 laptop:grid-cols-4">
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
           <div
             style={{
@@ -127,7 +128,7 @@ export const Main = (props: any) => {
             </CustomContentProgressbar>
           </div>
           <blockquote>
-            <p className="text-2xl font-bold text-blue-400">Market Place</p>
+            <p className=" text-xl laptop:text-2xl font-bold text-blue-400">Market Place</p>
           </blockquote>
         </div>
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
@@ -148,7 +149,7 @@ export const Main = (props: any) => {
             </CustomContentProgressbar>
           </div>
           <blockquote>
-            <p className="text-2xl font-bold text-blue-700">Play-To-Earn</p>
+            <p className=" text-xl laptop:text-2xl font-bold text-blue-700">Play-To-Earn</p>
           </blockquote>
         </div>
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
@@ -169,7 +170,7 @@ export const Main = (props: any) => {
             </CustomContentProgressbar>
           </div>
           <blockquote>
-            <p className="text-2xl font-bold text-violet-800">Metaverse</p>
+            <p className=" text-xl laptop:text-2xl font-bold text-violet-800">Metaverse</p>
           </blockquote>
         </div>
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
@@ -190,7 +191,7 @@ export const Main = (props: any) => {
             </CustomContentProgressbar>
           </div>
           <blockquote>
-            <p className="text-2xl font-bold text-fuchsia-700">Trade</p>
+            <p className=" text-xl laptop:text-2xl font-bold text-fuchsia-700">Trade</p>
           </blockquote>
         </div>
       </figure></div>

@@ -74,15 +74,15 @@ export const Xaraverse = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-          <button className="z-10 absolute text-white h-20 w-60 rotate-90 rounded-lg text-2xl bg-[#9E1DA1] left-0 top-1/2 -ml-20">
+          <button className="z-10 absolute text-white h-16 w-60 rotate-90 rounded-lg text-2xl bg-[#304AB1] left-0 top-1/2 -ml-20">
             View Map
           </button>
-          <button className="z-10 absolute text-white h-20 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
+          <button className="z-10 absolute text-white h-16 w-60 -rotate-90 rounded-lg text-2xl bg-[#9E1DA1] right-0 top-1/2 -mr-20">
             Enter Demo
           </button>
         </div>
 
-        <div className="w-[90%] relative flex flex-col bg-[#0b091a] rounded border-t-1 border-slate-500 items-center">
+        <div className="relative flex flex-col bg-[#0b091a] rounded border-t-1 border-slate-500 items-center">
           <Box sx={{ width: "100%" }}>
             <TabPanel value={value} index={0}>
               <div className="flex flex-row">
@@ -107,7 +107,7 @@ export const Xaraverse = () => {
                   >
                     Ecosystem overview1
                   </h1>
-
+<div className="w-full" >
                   <p
                     className="
               m-2
@@ -187,22 +187,24 @@ leading-snug
                     Liquidity Pools to earn yield on trading dees, or stake XARA
                     tp earn on APR.
                   </p>
-                </div>
+                </div></div>
 
-                <div className="aspect-w-16 aspect-h-9 pt-32 pb-20 rounded-lg desktop:ml-52 m-20">
+                <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-xl m-20 ">
                   <iframe
                     src="https://www.youtube.com/embed/Z_BiOBlOnj8"
                     width="640"
                     height="360"
+                    aria-controls="0"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    className="rounded-xl"
+                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
               </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <div className="flex flex-row">
+            <div className="flex flex-row">
                 <div className=" flex flex-col pt-32 pb-20 ml-10">
                   <h1
                     className="
@@ -224,7 +226,7 @@ leading-snug
                   >
                     Ecosystem overview2
                   </h1>
-
+<div className="w-full" >
                   <p
                     className="
               m-2
@@ -304,22 +306,24 @@ leading-snug
                     Liquidity Pools to earn yield on trading dees, or stake XARA
                     tp earn on APR.
                   </p>
-                </div>
+                </div></div>
 
-                <div className="aspect-w-16 aspect-h-9 pt-32 pb-20 rounded-lg desktop:ml-52 m-20">
+                <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-xl m-20 ">
                   <iframe
                     src="https://www.youtube.com/embed/Z_BiOBlOnj8"
                     width="640"
                     height="360"
+                    aria-controls="0"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    className="rounded-xl"
+                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
               </div>
             </TabPanel>
             <TabPanel value={value} index={2}>
-              <div className="flex flex-row">
+            <div className="flex flex-row">
                 <div className=" flex flex-col pt-32 pb-20 ml-10">
                   <h1
                     className="
@@ -341,7 +345,7 @@ leading-snug
                   >
                     Ecosystem overview3
                   </h1>
-
+<div className="w-full" >
                   <p
                     className="
               m-2
@@ -421,22 +425,24 @@ leading-snug
                     Liquidity Pools to earn yield on trading dees, or stake XARA
                     tp earn on APR.
                   </p>
-                </div>
+                </div></div>
 
-                <div className="aspect-w-16 aspect-h-9 pt-32 pb-20 rounded-lg desktop:ml-52 m-20">
+                <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-xl m-20 ">
                   <iframe
                     src="https://www.youtube.com/embed/Z_BiOBlOnj8"
                     width="640"
                     height="360"
+                    aria-controls="0"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    className="rounded-xl"
+                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
               </div>
             </TabPanel>
             <TabPanel value={value} index={3}>
-              <div className="flex flex-row">
+            <div className="flex flex-row">
                 <div className=" flex flex-col pt-32 pb-20 ml-10">
                   <h1
                     className="
@@ -458,7 +464,7 @@ leading-snug
                   >
                     Ecosystem overview4
                   </h1>
-
+<div className="w-full" >
                   <p
                     className="
               m-2
@@ -538,22 +544,34 @@ leading-snug
                     Liquidity Pools to earn yield on trading dees, or stake XARA
                     tp earn on APR.
                   </p>
-                </div>
+                </div></div>
 
-                <div className="aspect-w-16 aspect-h-9 pt-32 pb-20 rounded-lg desktop:ml-52 m-20">
+                <div className="aspect-w-16 aspect-h-9 pt-20 pb-20 rounded-xl m-20 ">
                   <iframe
                     src="https://www.youtube.com/embed/Z_BiOBlOnj8"
                     width="640"
                     height="360"
+                    aria-controls="0"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    className="rounded-xl"
+                    frameborder="0"
                     allowFullScreen
                   ></iframe>
                 </div>
               </div>
             </TabPanel>
           </Box>
-          <span className="absolute right-12 bottom-10 mr-10 mt-20">
+          <span className="absolute right-16 bottom-10 p-10 justify-between">
+          <button
+              onClick={() => {
+                if (value == 0) {
+                  setValue(3);
+                } else {
+                  setValue(value - 1);
+                }
+              }}
+              className=" h-12 w-12 text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-4xl rounded-full item-center p-2 m-4"
+            ><img src="/icons8-forward-100.png" className="rotate-180" /></button>
             <button
               onClick={() => {
                 if (value == 3) {
@@ -562,8 +580,9 @@ leading-snug
                   setValue(value + 1);
                 }
               }}
-              className=" h-20 w-20 text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-4xl rounded-full item-center mt-15"
-            >{`>`}</button>
+              className=" h-12 w-12 text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-4xl rounded-full item-center p-2 m-4"
+            ><img src="/icons8-forward-100.png" /></button>
+            
           </span>
         </div>
       </div>

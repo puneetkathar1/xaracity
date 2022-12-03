@@ -75,20 +75,20 @@ export const Navbar2 = (props: Props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "none",sm: "none", md: "block" } }}
           >
-            <div className="flex absolute left-4 top-4 pl-10">
+            <div className="flex absolute top-4 pl-4">
               <img className="w-[200px]" src="/xara_logo.png" alt="profile" />
             </div>
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             {navItems.map((item, i) => (
               <button
                 className={
@@ -114,7 +114,7 @@ export const Navbar2 = (props: Props) => {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
