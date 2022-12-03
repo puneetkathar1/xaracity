@@ -63,14 +63,23 @@ export const Xaraverse = () => {
         </p>
 
         <div className="w-full mb-0 relative">
-          <div className="relative w-full z-[5] mb-0">
-            <video width="100%" autoPlay muted controls={false} loop>
-              <source
-                src="https://media.githubusercontent.com/media/puneetkathar1/xaracity/master/public/xaracity.webm"
-                type="video/webm"
-              />
+          <div
+            id="video-container"
+            className="aspect-w-16 aspect-h-9 pb-[56.65%] h-0 relative  z-[5] mb-0 "
+          >
+            {/* <video width="100%" autoPlay muted controls={false} loop>
+              <source src="https://youtu.be/embed/jDL9PjY-8Oc" />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <iframe
+              src="https://www.youtube.com/embed/jDL9PjY-8Oc?autoplay=1&controls=0"
+              width="640"
+              height="360"
+              className="rounded-xl"
+              allowFullScreen
+              allow="autoplay"
+              controls="0"
+            ></iframe>
             <button className="z-10  absolute text-white h-10 w-32 laptop:h-16 laptop:w-60 rotate-90 rounded-lg text-lg laptop:text-2xl bg-[#304AB1] left-[-3.2rem] laptop:left-[-6rem] top-1/2  ">
               View Map
             </button>
