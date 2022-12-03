@@ -23,17 +23,17 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 export const NFT = (props) => {
-
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
   const [nav3, setNav3] = useState();
 
   var settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
+    fade: true,
   };
 
   return (
@@ -307,7 +307,7 @@ export const NFT = (props) => {
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
             <Slider
               {...settings}
-              asNavFor={nav2, nav3}
+              asNavFor={nav2}
               ref={(slider1) => setNav1(slider1)}
             >
               <div>
@@ -369,7 +369,13 @@ export const NFT = (props) => {
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
-            <Slider asNavFor={nav1, nav3} ref={(slider2) => setNav2(slider2)}>
+            <Slider
+              asNavFor={nav3}
+              ref={(slider2) => {
+                setNav2(slider2);
+              }}
+              {...settings}
+            >
               <div>
                 <img alt="" src="/b1.png" />
               </div>
@@ -435,7 +441,11 @@ export const NFT = (props) => {
 
         <div className=" w-[450px] h-[680px]  bg-[#1E0F2F] rounded-lg ml-10 items-center">
           <div className="w-4/5 md:w-48 md:h-auto md:rounded-none m-5 rounded  mx-auto">
-            <Slider asNavFor={nav1, nav2} ref={(slider3) => setNav3(slider3)}>
+            <Slider
+              asNavFor={nav1}
+              ref={(slider3) => setNav3(slider3)}
+              {...settings}
+            >
               <div>
                 <img alt="" src="/b1.png" />
               </div>
