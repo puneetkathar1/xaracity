@@ -38,7 +38,7 @@ export const NFT = (props) => {
 
   return (
     <div className="w-full  bg-[#0A091B] items-center -mt-4 flex flex-col ">
-      <div className="container w-full flex flex-col  justify-start items-center ">
+      <div className="container w-[98vw] flex flex-col  justify-start items-center ">
         <h1
           className="
             -mb-4
@@ -61,22 +61,22 @@ export const NFT = (props) => {
         </h1>
 
         <div className=" w-4/5 h-fit p-4 flex flex-col laptop:flex-row rounded-lg ml-5 mr-5 items-center relative bg-[#030116]">
-          <div className="flex-col md:w-48 md:h-auto rounded-lg ml-5 mr-5 mx-auto">
-            <div className="h-96 md:w-48 md:h-auto md:rounded-none  mr-5 mx-auto">
+          <div className="w-[98vw] flex-col rounded-lg ml-5 mr-5 mx-auto">
+            <div className="h-96 mx-auto">
               <img
                 src="/mint_preview2.png"
                 alt=""
                 className="h-96 w-96 md:w-48 md:h-48 md:rounded-none mx-auto shadow-2xl shadow-black"
               />
             </div>
-            <div className="h-20 w-96 md:w-48 md:h-auto text-center text-2xl text-white font-bold p-2 rounded-b-lg  mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="h-20 w-96 text-center text-2xl text-white font-bold p-2 rounded-b-lg  mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               Whitelist mint
               <p>
                 <Countdown date={new Date("12/7/2022")} renderer={renderer} />
               </p>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-[98vw] ">
             <div className="flex flex-col ">
               <h1
                 className="
@@ -303,8 +303,8 @@ export const NFT = (props) => {
           staking
         </p>
       </div>
-      <div className="w-full flex flex-col laptop:flex-row">
-        <div className="w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center justify-between mb-10 laptop:mb-0">
+      <div className="w-[98vw] m-auto flex flex-col laptop:flex-row">
+        <div className="w-[96vw] m-auto max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center justify-between mb-10 laptop:mb-0">
           <div className="w-4/5 m-5 rounded  mx-auto ">
             <Slider
               {...settings}
@@ -368,7 +368,7 @@ export const NFT = (props) => {
           </div>
         </div>
 
-        <div className=" w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center  mb-10 laptop:mb-0">
+        <div className=" w-[96vw] m-auto max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%]  bg-[#1E0F2F] rounded-lg items-center  mb-10 laptop:mb-0">
           <div className="w-4/5 m-5 rounded  mx-auto">
             <Slider
               asNavFor={nav3}
@@ -440,7 +440,7 @@ export const NFT = (props) => {
           </div>
         </div>
 
-        <div className="w-[100%] max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%] bg-[#1E0F2F] rounded-lg items-center">
+        <div className="w-[96vw] m-auto max-w-[450px] laptop:w-[30%] m-auto h-fit laptop:m-[1.6%] bg-[#1E0F2F] rounded-lg items-center">
           <div className="w-4/5 = m-5 rounded  mx-auto">
             <Slider
               asNavFor={nav1}
@@ -522,7 +522,7 @@ export const NFT = (props) => {
           </div>
         </div>
       </div>
-      <p className="text-[#7B8B9C] m-10 text-xl text-center  mb-10 laptop:mb-0">
+      <p className="text-[#7B8B9C] m-10 text-xl text-center  mb-10 laptop:mb-0 w-[98vw] ">
         Purchase a Land Site and Building Combo for a 10% discount and earn 25%
         more XARA from staking
       </p>

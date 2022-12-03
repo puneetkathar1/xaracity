@@ -5,25 +5,20 @@ export const Main = (props: any) => {
     <section className="w-full flex laptop:flex-col flex-col">
       <div id="home" className="w-full">
         <div className="navbar-line" />
-        <div className="w-full flex flex-col-reverse items-center laptop:flex-row  items-start justify-center whitespace-nowrap ">
-          <div className="flex flex-col justify-between items-start laptop:pt-40 pb-16 laptop:pb-40 pl-10 -mt-10 ">
+        <div className="w-full flex flex-col-reverse items-center laptop:flex-row   items-start justify-center">
+          <div className=" w-[98vw] laptop:w-fit flex flex-col laptop:pt-40 pb-16 laptop:pb-40 p-10 -mt-10   items-start justify-center">
             <h1
               className="
-            flex-1
-            ss:text-[72px]
-            ss:leading-[100px]
-           
             text-4xl
             font-extrabold 
-            tracking-tight 
-            leading-[75px]
             laptop:text-5xl 
             desktop:text-6xl 
             dark:text-white 
             bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
-            inline-block
             text-transparent
             bg-clip-text
+            mt-8
+            laptop:mt-0
             "
             >
               WELCOME TO
@@ -49,11 +44,9 @@ export const Main = (props: any) => {
               className="
             mb-2
             font-extrabold 
-            text-lg
-            laptop:text-xl desktop:text-2xl 
-            dark:text-gray-400
+            text-md
+            laptop:text-lg
             bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
-            inline-block
             text-transparent
             bg-clip-text"
             >
@@ -63,23 +56,22 @@ export const Main = (props: any) => {
               className=" 
             font-semibold 
             text-gray-500 
-            dark:text-gray-400
-            text-lg
+            text-md
+            laptop:text-lg
             "
             >
-              Onboarding assets backend, Web2.0 companies{" "}
+              Onboarding assets backend, Web2.0 companies and products into
+              Web3.0
             </p>
             <p
               className="
             mb-3 
             font-semibold 
             text-gray-500 
-            dark:text-gray-400
-            text-lg
+            text-md
+            laptop:text-lg
             "
-            >
-              and products into Web3.0
-            </p>
+            ></p>
             <button
               className="
                 inline-flex 
@@ -113,7 +105,7 @@ export const Main = (props: any) => {
       <div id="home2" className="w-full p-20">
         <figure
           style={{ margin: "auto" }}
-          className="md:flex bg-[#000] rounded-xl mx-auto p-3 mt-5 md:p-0 dark:bg-slate-800 items-center w-95vw laptop:w-[60vw] flex flex-row ml-5 grid grid-cols-2 laptop:grid-cols-4"
+          className="bg-[#000] rounded-xl mx-auto p-3 mt-5 items-center w-[98vw] laptop:w-[60vw] flex flex-row grid grid-cols-2 laptop:grid-cols-4"
         >
           <div className="pt-6 md:p-8 text-center md:text-left space-y-4 m-auto">
             <div

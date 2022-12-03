@@ -81,19 +81,19 @@ export const FooterMain = () => {
             </div>
           </div>
           <div className="navbar-line mt-10 mb-8 mx-auto" />
-          <div className="w-full flex flex-row justify-center text-center">
+          <div className="w-[98vw] m-auto flex flex-col laptop:flex-row justify-center text-center">
             <p className="text-gray-400 tracking-wider indent-2">
               {" "}
               Xara City 2022{" "}
             </p>
-            <p className="text-gray-400 tracking-wider indent-2"> | Policy </p>
-            <p className="text-gray-400 tracking-wider indent-2">
+            <p className="text-gray-400 tracking-wider indent-8"> Policy </p>
+            <p className="text-gray-400 tracking-wider indent-8">
               {" "}
-              | Terms & Conditions
+              Terms & Conditions
             </p>
-            <p className="text-gray-400 tracking-wider indent-2">
+            <p className="text-gray-400 tracking-wider indent-8">
               {" "}
-              | Disclaimer{" "}
+              Disclaimer{" "}
             </p>
 
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center"></div>
