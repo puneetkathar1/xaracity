@@ -122,7 +122,7 @@ leading-snug
                 
                 "
                     >
-                      - Bid, Buy, and Sell NFTs or Rent Virtual Apartments via
+                      &#8226; Bid, Buy, and Sell NFTs or Rent Virtual Apartments via
                       the Xara City Market Place
                     </p>
 
@@ -141,7 +141,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Stake NFTs in the Xara City Play-To-Earn property
+                      &#8226; Stake NFTs in the Xara City Play-To-Earn property
                       development game and earn XARA as a staking reward
                     </p>
 
@@ -160,7 +160,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Spend XARA earned from staking in the Xaraverse
+                      &#8226; Spend XARA earned from staking in the Xaraverse
                       (metaverse) on VR experience such as shopping, casino,
                       games, educational seminars and trading, theme parks and
                       more...
@@ -181,7 +181,7 @@ leading-snug
  leading-snug
                 "
                     >
-                      - Swap or Trade USD for XARA to spend in-game, funds
+                      &#8226; Swap or Trade USD for XARA to spend in-game, funds
                       Liquidity Pools to earn yield on Trading fees, or take a
                       DeFi loan..
                     </p>
@@ -237,7 +237,7 @@ leading-snug
                 
                 "
                     >
-                      - Stake Land Site NFTs and Building NFTs to earn up to 185
+                      &#8226; Stake Land Site NFTs and Building NFTs to earn up to 185
                       $Xara per month as a staking reward
                     </p>
 
@@ -256,7 +256,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Fractionalize a Land Site and Building NFT set into 50,
+                      &#8226; Fractionalize a Land Site and Building NFT set into 50,
                       75 or 100 Key NFTs to sell or stake and earn up to 250
                       $Xara per month
                     </p>
@@ -276,7 +276,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Upgrade Key NFTs into VR NFTS with Virtual Apartments to
+                      &#8226; Upgrade Key NFTs into VR NFTS with Virtual Apartments to
                       sell, rent out or stake and earn up to 315 $Xara per month
                     </p>
                   </div>
@@ -331,7 +331,7 @@ leading-snug
                 
                 "
                     >
-                      - The Xaraverse is a Hyper-realistic digital world with
+                      &#8226; The Xaraverse is a Hyper-realistic digital world with
                       fully Immersive 3D Virtual Experiences, coupled with a
                       fully functioning shared economy.
                     </p>
@@ -351,7 +351,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - The Xaraverse is an always-on digital environment where
+                      &#8226; The Xaraverse is an always-on digital environment where
                       visitors can shop, socialise, train for their jobs, play
                       games, take classes, attend meetings, have cultural
                       experiences and more…
@@ -372,10 +372,9 @@ leading-snug
 leading-snug
                 "
                     >
-                      - he Xaraverse is poised to radically change how we work,
-                      play and connect.
-                      <br />
-                      Spend $Xara earned in-game on VR Experiences…
+                      &#8226; The Xaraverse is poised to radically change how we work,
+                      play and connect. Spend $Xara earned in-game on VR Experiences…
+                      
                     </p>
                   </div>
                 </div>
@@ -429,7 +428,7 @@ leading-snug
                 
                 "
                     >
-                      - Buy or Bid on Xara City NFTS, Fractionalized Assets or
+                      &#8226; Buy or Bid on Xara City NFTS, Fractionalized Assets or
                       Rare One of One NFTS…
                     </p>
 
@@ -448,7 +447,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Rent Virtual Apartments in the Xaraverse…
+                      &#8226; Rent Virtual Apartments in the Xaraverse…
                     </p>
 
                     <p
@@ -466,7 +465,7 @@ leading-snug
 leading-snug
                 "
                     >
-                      - Mint Event or Raffle Tickets as NFTS…
+                      &#8226; Mint Event or Raffle Tickets as NFTS…
                     </p>
 
                     <p
@@ -484,7 +483,7 @@ leading-snug
  leading-snug
                 "
                     >
-                      - Get White Listed for Future Projects…
+                      &#8226; Get White Listed for Future Projects…
                     </p>
                     <p
                       className="
@@ -501,7 +500,7 @@ leading-snug
  leading-snug
                 "
                     >
-                      - Swap USD for $Xara to spend in the Xara City Market
+                      &#8226; Swap USD for $Xara to spend in the Xara City Market
                       Place or Xaraverse
                     </p>
                     <p
@@ -519,7 +518,7 @@ leading-snug
  leading-snug
                 "
                     >
-                      - Fund Liquidity pools to earn yield on trading fees or
+                      &#8226; Fund Liquidity pools to earn yield on trading fees or
                       stake LP tokens in Farms to earn APR
                     </p>
                     <p
@@ -537,7 +536,7 @@ leading-snug
  leading-snug
                 "
                     >
-                      - Stake $Xara to earn an APR, take a DeFi loan or trade
+                      &#8226; Stake $Xara to earn an APR, take a DeFi loan or trade
                       $Xara on the trading platform
                     </p>
                   </div>
