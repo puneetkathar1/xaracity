@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import YouTube, { YouTubeProps } from "react-youtube";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -29,7 +30,23 @@ function TabPanel(props: TabPanelProps) {
 
 export const Xaraverse = () => {
   const [value, setValue] = React.useState(0);
-
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+    const opts: YouTubeProps["opts"] = {
+      height: "390",
+      width: "640",
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+        loop:1,
+        rel:0,
+        controls:0,
+        showInfo:0,
+        muted:1
+      },
+    };
   return (
     <section className=" w-full flex md:flex-row flex-col items-start pt-18 bg-[#020117]">
       <div className="w-[98vw] m-auto flex flex-col items-center">
@@ -71,12 +88,17 @@ export const Xaraverse = () => {
               <source src="https://youtu.be/embed/jDL9PjY-8Oc" />
               Your browser does not support the video tag.
             </video> */}
-            <iframe
+            {/* <iframe
               src="https://www.youtube.com/embed/jDL9PjY-8Oc?playlist=jDL9PjY-8Oc&autoplay=1&muted=1&loop=1&rel=0&showinfo=0&controls=0"
               width="640"
               height="360"
               className="rounded-xl"
-            ></iframe>
+            ></iframe> */}
+            <YouTube
+              videoId="jDL9PjY-8Oc"
+              opts={opts}
+              onReady={onPlayerReady}
+            />
             <button className="z-10  absolute text-white h-10 w-32 laptop:h-16 laptop:w-60 rotate-90 rounded-lg text-lg laptop:text-2xl bg-[#304AB1] left-[-3.2rem] laptop:left-[-6rem] top-1/2  ">
               View Map
             </button>
