@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { ethers } from "ethers";
 
 interface Props {
   /**
@@ -21,24 +22,76 @@ interface Props {
   window?: () => Window;
 }
 
+
+
 const drawerWidth = 240;
-const navItems = [
-  "Home",
-  "Ecosystem",
-  "Collection",
-  "Xaraverse",
-  "FAQ",
-  "Team",
-  "Market Place",
-];
+
+
+const checkConnect = async () => {	
+	try{
+	  if(window.ethereum) {
+		const isUnlocked = await window?.ethereum?.request({method: 'eth_accounts'});;
+		if(isUnlocked.length > 0){
+			return("Connected")
+		}else{
+			return("Connect")
+		}
+	  }else{
+		return("Connect")
+	  }
+	}catch(e){
+		console.log(e)
+		return("Connect")
+	}
+
+}
+
+const connectWallet = async () => {	
+	try{
+		if (window.ethereum) {
+		  const provider = new ethers.providers.Web3Provider(window.ethereum);
+		  await provider.send("eth_requestAccounts", []);
+		  const signer = await provider.getSigner();
+		  console.log("signer",signer)
+		}
+	}catch(e){
+		console.log(e)
+		alert("Something went wrong connecting wallet")
+	}
+}
 
 export const Navbar = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [loaded, setLoading] = React.useState(false);
+  const [walletConnect, setwalletConnect] = React.useState("Connect");
+  const navItems = [
+	"Home",
+	"Ecosystem",
+	"Collection",
+	"Xaraverse",
+	"FAQ",
+	"Team",
+	walletConnect,
+  ];
+
   React.useEffect(() => {
     setLoading(true);
+	const checkConnectEffect = async () => {
+		const wStatus = await checkConnect();
+		setwalletConnect(wStatus)
+	}
+	checkConnectEffect();
   }, []);
+
+  const handleOnClicks = async (sectionIndex: any) => {
+    if(sectionIndex == 6){
+		await connectWallet();
+		const wStatus = await checkConnect();
+		setwalletConnect(wStatus)
+	}
+  };
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -94,10 +147,12 @@ export const Navbar = (props: Props) => {
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             {navItems.map((item, i) => (
               <button
+				onClick = {(e)=>handleOnClicks(i)}
                 className={
                   i != navItems.length - 1
                     ? "normal-case text-slate-400 text-lg hover:text-fuchsia-700 m-2 mt-6"
-                    : "inline-flex items-center text-white font-bold py-2 px-4 rounded bg-fuchsia-700 hover:border-2 hover:bg-transparent hover:border-fuchsia-500 m-2 mt-6"
+                    : (walletConnect == "Connect" ? "inline-flex items-center text-white font-bold py-2 px-4 rounded bg-fuchsia-700 hover:border-2 hover:bg-transparent hover:border-fuchsia-500 m-2 mt-6": 
+					"inline-flex items-center text-white font-bold py-2 px-4 rounded bg-fuchsia-700 hover:border-2 hover:bg-transparent hover:border-fuchsia-500 m-2 mt-6")
                 }
                 key={item}
               >
