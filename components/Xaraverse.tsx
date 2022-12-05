@@ -31,7 +31,7 @@ export const Xaraverse = () => {
   const [value, setValue] = React.useState(0);
 
   return (
-    <section className=" w-full flex md:flex-row flex-col items-start pt-18 bg-[#020117]">
+    <section id="xaraverse" className=" w-full flex md:flex-row flex-col items-start pt-18 bg-[#020117]">
       <div className="w-[98vw] m-auto flex flex-col items-center">
         <h1
           className="

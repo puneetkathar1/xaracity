@@ -199,7 +199,7 @@ export const NFT = (props) => {
 
   return (
     <div className="w-full  bg-[#0A091B] items-center -mt-4 flex flex-col ">
-      <div className="container w-[98vw] flex flex-col  justify-start items-center ">
+      <div id="collection" className="container w-[98vw] flex flex-col  justify-start items-center ">
         <h1
           className="
             -mb-4

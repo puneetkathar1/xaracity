@@ -21,6 +21,7 @@ export const Faq = () => {
         paddingBottom: "18vh",
       }}
       className="flex flex-col items-center  m-auto"
+      id="faq"
     >
       <h1
         style={{ paddingBottom: "8vh" }}

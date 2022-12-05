@@ -7,7 +7,7 @@ export const Team = () => {
       id="team"
       className=" w-full  flex flex-col  justify-center items-center "
     >
-      <div id="home2" className="w-full p-14">
+      <div id="ecosystem2" className="w-full p-14">
         <div className="flex flex-row mx-auto w-[98vw]">
           <div className="w-1/2">
             <h1
